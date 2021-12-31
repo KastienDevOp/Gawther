@@ -8,57 +8,41 @@ BLEND WITH WHAT I AM WORKING ON AS WELL.
 12/30/21
 
     **Currently Doing**
-        -generating gawther server template in case of bot/person hack
-            -LockDown
-                - all channels become 100% inaccessible to anyone who is not
-                  the Head Admin, Gawther Dev Team Supervisor, Or Owner Of 
-                  Gawther.
+        -*LockDown*
+            - all channels become 100% inaccessible to anyone who is not
+              the Head Admin, Gawther Dev Team Supervisor, Or Owner Of 
+              Gawther.
                 
-                - create override feature only usable by Mekasu, KataReborn,
-                  or GamingBuddhist
+            - create override feature only usable by Mekasu, KataReborn,
+              or GamingBuddhist
 
-            -*channel back up feature*
-                - iterates through each category, and categories channels to 
-                  obtain message, message author, message created at, category,
-                  and channel to be written to off-site storage to be re-implimented
-                  once re-construction of Gawther has finished.
+        -*channel back up feature*
+            - iterates through each category, and categories channels to 
+              obtain message, message author, message created at, category,
+              and channel to be written to off-site storage to be re-implimented
+              once re-construction of Gawther has finished.
 
-                - iterates through Gawthers current storage features, creates a 
-                  "copy" and then destroys all storage features after creating 
-                  a new storage feature using fresh information that is NOT 
-                  linked to copied information whatsoever. Read from A, Write To B.
-                  No Link.
+            - iterates through Gawthers current storage features, creates a 
+              "copy" and then destroys all storage features after creating 
+              a new storage feature using fresh information that is NOT 
+              linked to copied information whatsoever. Read from A, Write To B.
+              No Link.
 
-            -Clean up 
-                - iterates through each category, and category channel and 
-                  deletes them as it goes.
-                - iterates through every role within the server, and deletes 
-                  them as it goes.
-            
-            - Re-Construction 
-                - recreates each role, and rewrites the permissions to those 
-                  that existed before LockDown.
-                
-                - recreates each channel and category while setting each 
-                  categories permissions for each role.
-
-                - takes chat backup, and re-impliments the chat messages
-                  back into the corresponding chat channels in an embed
-                  format, or other format that is appealing to the eye
-                  while keeping the channels clean.
-
-                    - second option: leave chats in storage. do not re-impliment. 
-                      create search command that will search through previous 
-                      chats and return the results to the user in their dms.
-
-                        - search range is done by date, time frame, member name.
-                          return all members messages, or entire conversation from 
-                          when member sent initial message to last message within 
-                          time frame.
-
-
+        -creating a server template.
+            - In the event that discord was to ever have a server failure, 
+              or for some odd reason Gawther (server) was to fail, I am 
+              creating a template that will recreate our community for us.
+              From replacing roles with permissions to recreating text
+              channels and categories.
+              
     **Currently In Testing**
         - server template.
+
+    **Tried Tested and True**
+        - reset server command.
+            - this command will clone and delete each channel and category within the
+              discord server and places them back in their proper categories in the 
+              position in which they came from 
 
     **Coming In The Future**
         - support ticket extension
@@ -67,3 +51,10 @@ BLEND WITH WHAT I AM WORKING ON AS WELL.
             - create global programming language help commands
                 - do not webscrape mekasu -Mekasu 
             - create support staff commands 
+
+=========================================================================================
+Changelog Vs. 0.0.1
+
+  - added reset server command.
+  - fixed bugs
+  - fixed confirmation going to wrong place 
