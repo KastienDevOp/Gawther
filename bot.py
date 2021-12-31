@@ -23,8 +23,6 @@ async def on_ready():
     channel = disnake.utils.get(guild.text_channels, name='gawther_terminal')
     
     await channel.send(f"Logged In As: {bot.user.name} @ {datetime.datetime.now().__format__('%m/%d/%y -- %H:%M:%S')}")
-    
-    await confirm()
 
 
 for filename in os.listdir('./cogs'):
@@ -34,9 +32,10 @@ for filename in os.listdir('./cogs'):
 
 @bot.command()
 @commands.has_any_role("Owner", "Devs")
-async def update():
-    async def start():
+async def update(ctx):
+    async def start(ctx):
         os.system("python ./bot.py")
+        
     
     guildId = bot.get_guild(926209800734408774)
     
@@ -44,14 +43,7 @@ async def update():
     
     await channel.send("Gother Is resetting Now. . .")
 
-    await start()
-
-
-async def confirm():
-    guildId = bot.get_guild(926209800734408774)
-    
-    channel = disnake.utils.get(guildId.text_channels, name='gawther_terminal')
-    await channel.send("Gother Has Restarted!")
+    await start(ctx)
 
 if __name__ == '__main__':
     # create_db()
