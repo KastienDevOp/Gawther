@@ -86,8 +86,7 @@ class OwnerCommands(commands.Cog):
         if owner_id.content == self.bot.owner_id:
             embed.add_field(
                 name='This Command Is Going To Exeute The Following:',
-                value=f'Remove All Roles, Text Channels, Voice Channels, Categories,\
-                    and Messages Within {self.guild.name}',
+                value=f'Remove All Roles, Text Channels, Voice Channels, Categories, and Messages Within {self.guild.name}',
                 inline=False
             ).add_field(
                 name=f'Categories To Be Deleted: {len([cat for cat in ctx.guild.categories])}'
