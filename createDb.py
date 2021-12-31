@@ -16,8 +16,13 @@ def create_db():
             subStatus TEXT
         )''')
         
-        cur.execute('''(
-            x
+        cur.execute('''CREATE TABLE IF NOT EXISTS chatBackup(
+            guildId INTEGER,
+            timestamp TEXT,
+            author TEXT,
+            category INTEGER,
+            channel INTEGER,
+            content TEXT
         )''')
         
         cur.execute('''(

@@ -1,0 +1,69 @@
+ANY PARTS OF SENTENCES SURROUNDED IN * ARE MARKED FOR KATAREBORN AS THOSE ARE 
+FUNCTIONS/METHODS/MODULES THAT HE IS WORKING ON. THEY JUST SO HAPPEND TO 
+BLEND WITH WHAT I AM WORKING ON AS WELL.
+
+
+=============================================================================
+
+12/30/21
+
+    **Currently Doing**
+        -generating gawther server template in case of bot/person hack
+            -LockDown
+                - all channels become 100% inaccessible to anyone who is not
+                  the Head Admin, Gawther Dev Team Supervisor, Or Owner Of 
+                  Gawther.
+                
+                - create override feature only usable by Mekasu, KataReborn,
+                  or GamingBuddhist
+
+            -*channel back up feature*
+                - iterates through each category, and categories channels to 
+                  obtain message, message author, message created at, category,
+                  and channel to be written to off-site storage to be re-implimented
+                  once re-construction of Gawther has finished.
+
+                - iterates through Gawthers current storage features, creates a 
+                  "copy" and then destroys all storage features after creating 
+                  a new storage feature using fresh information that is NOT 
+                  linked to copied information whatsoever. Read from A, Write To B.
+                  No Link.
+
+            -Clean up 
+                - iterates through each category, and category channel and 
+                  deletes them as it goes.
+                - iterates through every role within the server, and deletes 
+                  them as it goes.
+            
+            - Re-Construction 
+                - recreates each role, and rewrites the permissions to those 
+                  that existed before LockDown.
+                
+                - recreates each channel and category while setting each 
+                  categories permissions for each role.
+
+                - takes chat backup, and re-impliments the chat messages
+                  back into the corresponding chat channels in an embed
+                  format, or other format that is appealing to the eye
+                  while keeping the channels clean.
+
+                    - second option: leave chats in storage. do not re-impliment. 
+                      create search command that will search through previous 
+                      chats and return the results to the user in their dms.
+
+                        - search range is done by date, time frame, member name.
+                          return all members messages, or entire conversation from 
+                          when member sent initial message to last message within 
+                          time frame.
+
+
+    **Currently In Testing**
+        - server template.
+
+    **Coming In The Future**
+        - support ticket extension
+        
+            - create ticket creator command 
+            - create global programming language help commands
+                - do not webscrape mekasu -Mekasu 
+            - create support staff commands 
