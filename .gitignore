@@ -1,2 +1,4 @@
 bot-env
 config.json
+./cogs/ownerCommands.py
+test.py

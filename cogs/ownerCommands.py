@@ -33,7 +33,7 @@ class OwnerCommands(commands.Cog):
         self.bot = bot
 
         self.guild = guild
-        self.gawther_terminal = self.bot.get_text_channel(terminal_channel)
+        self.gawther_terminal = self.bot.get_channel(terminal_channel)
         
         self.owner = owner
         self.devs = devs
